@@ -69,8 +69,10 @@ Schema::create('resumes', function (Blueprint $table) {
  */
 
 <!-- 9 Step 03 Controller Methods Routes -->
+------------------------------------------------------
 
-php artisan make:controller 
+<!-- php artisan make:controller  -->
+
 php artisan make:controller ContactController
 php artisan make:controller HomeController
 php artisan make:controller ProjectController
