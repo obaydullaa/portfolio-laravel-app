@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('experiences', function (Blueprint $table) {
+        Schema::create('socials', function (Blueprint $table) {
             $table->id();
-            $table->string('duration, 50');
-            $table->string('title, 50');
-            $table->string('designation, 200');
-            $table->text('details');
+            $table->string('twitter', 300);
+            $table->string('githubLink', 300);
+            $table->string('linkedinLink', 300);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
@@ -27,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('experiences');
+        Schema::dropIfExists('socials');
     }
 };

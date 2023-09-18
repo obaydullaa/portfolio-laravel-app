@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('socials', function (Blueprint $table) {
+        Schema::create('educations', function (Blueprint $table) {
             $table->id();
-            $table->string('twitterLink', 300);
-            $table->string('githubLink', 300);
-            $table->string('linkedinLink', 300);
+            $table->string('duration', 50);
+            $table->string('institutionName', 50);
+            $table->string('field', 200);
+            $table->text('details');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('socials');
+        Schema::dropIfExists('educations');
     }
 };
