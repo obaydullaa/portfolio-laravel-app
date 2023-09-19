@@ -14,9 +14,9 @@ class HomeController extends Controller
         return DB::table('heroproperties')->first();
     }
     function aboutData(Request $request) {
-        return DB::table('about')->first();
+        return DB::table('abouts')->get();
     }
     function socialData(Request $request) {
-        return DB::table('socials')->first();
+        return DB::table('socials')->get();
     }
 }
