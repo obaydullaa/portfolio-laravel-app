@@ -171,6 +171,8 @@ class ResumeController extends Controller
  * 11 Step 05 Back End Testing
  * testing use postman
  */
+ off for testing app -> http -> kernel.php
+ // \App\Http\Middleware\VerifyCsrfToken::class, commnet this line
 
  /**
   * 12 Step 6 Blade Component Design
