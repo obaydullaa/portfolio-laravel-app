@@ -14,3 +14,16 @@
     </head>
 
     <body class="d-flex flex-column h-100">
+
+    @include('compoents.navbar')
+
+    @include('compoents.loader')
+
+    <div class="" id="content-div">
+        @yield('content')
+    </div>
+
+    @include('compoents.footer')
+
+    </body>
+</html>
