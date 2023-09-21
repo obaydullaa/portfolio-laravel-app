@@ -2,6 +2,6 @@
 @section('content')
     @include('components.experience')
     @include('components.education')
-    @include('components.projessional-skills')
+    @include('components.professional-skills')
     @include('components.languages')
 @endsection
