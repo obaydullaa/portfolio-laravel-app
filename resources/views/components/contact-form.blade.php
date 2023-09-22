@@ -32,9 +32,9 @@
                             <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
                             <label for="message">Message</label>
                         </div>
-                        </div>
                         <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                     </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,10 +70,20 @@
                 message: message
             }
             let URL = "/contactRequest";
+
+            // Loader Show content hide    
+            document.getElementById('loading-div').classList.remove('d-none');
+            document.getElementById('content-div').classList.add('d-none');
+            
             let result = await axios.post(URL, formData)
-            console.log(result);
+
+            // Loader hide content show   
+            document.getElementById('loading-div').classList.add('d-none');
+            document.getElementById('content-div').classList.remove('d-none');
+
             if(result.status === 200 && result.data === 1) {
                 alert("Your Request has been successfully")
+                contactForm.reset();
             } else {
                 alert("Something went wrong");
             }
