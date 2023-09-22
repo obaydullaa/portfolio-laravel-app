@@ -43,12 +43,41 @@
 
 <script>
     let contactForm  = document.getElementById('contactForm');
-    contactForm.addEventListener('submit',(even)=>{
+    contactForm.addEventListener('submit', async (even)=>{
         even.preventDefault();
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
         let phone = document.getElementById('phone').value;
         let message = document.getElementById('message').value;
+
+        if(name.length===0){
+            alert('Please enter your name');
+            return;
+        }else if(email.length===0){
+            alert('Please enter your email');
+            return;
+        }else if(phone.length===0){
+            alert('Please enter your phone number');
+            return;
+        }else if(message.length===0){
+            alert('Please enter your message');
+            return;
+        }else {
+            let formData = {
+                fullName: name,
+                email: email,
+                phone: phone,
+                message: message
+            }
+            let URL = "/contactRequest";
+            let result = await axios.post(URL, formData)
+            console.log(result);
+            if(result.status === 200 && result.data === 1) {
+                alert("Your Request has been successfully")
+            } else {
+                alert("Something went wrong");
+            }
+        }
        
     });
 
