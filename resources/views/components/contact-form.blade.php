@@ -42,6 +42,14 @@
 </section>
 
 <script>
-    let contactForm  = 
+    let contactForm  = document.getElementById('contactForm');
+    contactForm.addEventListener('submit',(even)=>{
+        even.preventDefault();
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let phone = document.getElementById('phone').value;
+        let message = document.getElementById('message').value;
+       
+    });
 
 </script>
