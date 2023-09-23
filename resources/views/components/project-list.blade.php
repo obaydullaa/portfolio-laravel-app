@@ -27,14 +27,15 @@
 
 <script>
     GetProjectList();
-    async GetProjectList () {
+    async function GetProjectList () {
         let URL ="/projectsData";
         try {
             
             const response = await axios.get(URL);
             
             response.data.forEach((item) => {
-                document.getElementById('project-list').innerHTML+=(`<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                document.getElementById('project-list').innerHTML+=(
+                    `<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
                             <div class="p-5">

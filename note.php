@@ -288,7 +288,7 @@ class ResumeController extends Controller
 
 <script>
     getProjectList();
-    async function getProjectList () {
+    async function getProjectList() {
         let URL="/projectsData"; 
 
         try{
