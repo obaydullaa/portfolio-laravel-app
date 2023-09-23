@@ -281,7 +281,6 @@ class ResumeController extends Controller
 
 
 
-
 /**
 * 15 Step 8 Ajax Call
 */
