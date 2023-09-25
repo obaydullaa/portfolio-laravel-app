@@ -30,8 +30,18 @@
     async function GetProjectList () {
         let URL ="/projectsData";
         try {
+
+            // Loader Show content hide    
+            document.getElementById('loading-div').classList.remove('d-none');
+            document.getElementById('content-div').classList.add('d-none');
             
             const response = await axios.get(URL);
+
+            // Loader hide content show   
+            document.getElementById('loading-div').classList.add('d-none');
+            document.getElementById('content-div').classList.remove('d-none');
+            
+            
             
             response.data.forEach((item) => {
                 document.getElementById('project-list').innerHTML+=(
