@@ -36,14 +36,13 @@
             document.getElementById('content-div').classList.add('d-none');
             
             const response = await axios.get(URL);
-consol.log(response);
+
             // Loader hide content show   
             document.getElementById('loading-div').classList.add('d-none');
             document.getElementById('content-div').classList.remove('d-none');
             
             
             
-
             response.data.forEach((item) => {
                 document.getElementById('project-list').innerHTML+=(
                     `<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
@@ -54,7 +53,7 @@ consol.log(response);
                                 <p>${item['details']}</p>
                                 <a class="text-decoration-none" target="_blank" href="${item['previewLink']}">View Projec</a>
                             </div>
-                            <img class="w-100" src="${item['previewLink ']}" alt="..." />
+                            <img class="w-100" src="${item['thumbnailLink']}" alt="..." />
                         </div>
                     </div>
                 </div>`)
