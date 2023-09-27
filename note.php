@@ -354,6 +354,11 @@ class ResumeController extends Controller
     */
 
     <!-- education.blade.php  -->
+    <!-- New Column add -->
+
+    // php artisan make:migration add_paid_to_users_table --table=users
+    // php artisan make:migration add_thumbnailLink_to_projects_table --table=projects
+    // php artisan migrate 
 
     <script>
 
