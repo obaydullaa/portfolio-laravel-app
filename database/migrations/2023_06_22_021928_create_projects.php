@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('title', 100);
             $table->string('previewLink', 300);
-            $table->string('thumbnailLink',300);
             $table->text('details');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
