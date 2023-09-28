@@ -17,7 +17,23 @@
 
                 <div class="" id="experince-list">
                     <!-- Experience Card 1-->
-                    <div class="card shadow border-0 rounded-4 mb-5">
+                    
+                </div>
+
+            </section>
+            <!-- Education Section-->
+
+<script>
+    GetExpLost();
+    async function GetExpLost() {
+       try {
+        
+        let URL = "/experiencesData";
+        let response = axios.get(URL);
+
+        response.data.forEach(item => {
+                document.getElementById('lexperince-list').innerHTML+=(
+                    `<div class="card shadow border-0 rounded-4 mb-5">
                         <div class="card-body p-5">
                             <div class="row align-items-center gx-5">
                                 <div class="col text-center text-lg-start mb-4 mb-lg-0">
@@ -35,25 +51,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-            </section>
-            <!-- Education Section-->
-
-<script>
-    GetExpLost();
-    async function GetExpLost() {
-       try {
-        
-        let URL = "/experiencesData";
-        let response = axios.get(URL);
-
-        response.data.forEach(item{
-
-
-
-        })
+                    </div>`)
+                
+            });
 
        }catch (error) {
         alert(error.message);
