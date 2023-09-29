@@ -31,7 +31,7 @@
         let URL = "/experiencesData";
         let response = await axios.get(URL);
 
-        response.data.forEach(item => {
+        response.data.forEach((item) => {
                 document.getElementById('experince-list').innerHTML+=(
                     `<div class="card shadow border-0 rounded-4 mb-5">
                         <div class="card-body p-5">
@@ -53,7 +53,7 @@
             });
 
        }catch (error) {
-        alert(error.message);
+        alert(error);
        }
     }
 </script>
