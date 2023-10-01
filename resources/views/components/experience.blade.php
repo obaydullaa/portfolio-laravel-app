@@ -24,6 +24,23 @@
             <!-- Education Section-->
 
 <script>
+
+    getResumeLinkg();
+   async function getResumeLinkg  () {
+
+        try {
+            
+        } catch (error) {
+            
+        }
+        
+    }
+
+
+
+
+
+
     getExpList();
     async function getExpList() {
        try {
