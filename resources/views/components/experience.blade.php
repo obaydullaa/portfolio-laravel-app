@@ -29,6 +29,9 @@
    async function getResumeLinkg() {
         try {
             let URL = "/resumeLink";
+            // Loader Show content hide    
+            document.getElementById('loading-div').classList.remove('d-none');
+            document.getElementById('content-div').classList.add('d-none');
             
             let response = await axios.get(URL);
             console.log(response);
