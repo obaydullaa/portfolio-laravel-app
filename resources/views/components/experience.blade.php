@@ -31,7 +31,8 @@
             let URL = "/resumeLink";
             let response = await axios.get(URL);
             console.log(response);
-            let link =response.data['downloadLink'];
+            let link = response.data[0]['downloadLink'];
+
             console.log(link);
             document.getElementById("CVDownloadLink").setAttribute('href',link);
         
