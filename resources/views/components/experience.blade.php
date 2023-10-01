@@ -9,7 +9,7 @@
             <section>
                 <div class="d-flex align-items-center justify-content-between mb-4">
                     <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                    <a class="btn btn-primary px-4 py-3" href="#!">
+                    <a target="_blank" class="btn btn-primary px-4 py-3" id="CVDownloadLink" href="">
                         <div class="d-inline-block bi bi-download me-2"></div>
                         Download Resume
                     </a>
@@ -26,12 +26,18 @@
 <script>
 
     getResumeLinkg();
-   async function getResumeLinkg  () {
-
+   async function getResumeLinkg() {
         try {
+            let URL = "/resumeLink";
+            let response = await axios.get(URL);
+            console.log(response);
+            let link =response.data['downloadLink'];
+            console.log(link);
+            document.getElementById("CVDownloadLink").setAttribute('href',link);
+        
             
         } catch (error) {
-            
+            alertA(error);
         }
         
     }
