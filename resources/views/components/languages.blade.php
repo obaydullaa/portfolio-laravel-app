@@ -23,7 +23,14 @@
         try {
             let URL = "/languageData";
 
-            let response = await axios(URL);
+
+            
+            let response = await axios(URL); 
+
+            // Loader hide content show   
+            document.getElementById('loading-div').classList.add('d-none');
+            document.getElementById('content-div').classList.remove('d-none');
+            
 
             response.data.forEach(item => {
                 document.getElementById('language-list').innerHTML+=(
@@ -32,7 +39,6 @@
                             ${item['name']}
                         </div>
                     </div>`)
-                
             });
 
 
