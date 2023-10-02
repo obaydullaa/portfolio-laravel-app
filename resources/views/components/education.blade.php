@@ -43,10 +43,7 @@
                             </div>
                         </div>
                     </div>`)
-
             })
-
-
 
         }catch (e) {
             alert(e);
