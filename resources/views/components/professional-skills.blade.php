@@ -35,7 +35,6 @@
                 
             });
 
-
         }catch (error) {
             alert('error');
         }
