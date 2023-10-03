@@ -23,8 +23,6 @@
         try {
             let URL = "/languageData";
 
-
-            
             let response = await axios(URL); 
 
             // Loader hide content show   
