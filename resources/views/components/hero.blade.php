@@ -16,7 +16,7 @@
             <div class="col-xxl-7">
                 <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                     <div class="profile">
-                        <img class="profile-img" src="assets/profile.png" alt="..." />
+                        <img id="img_profile" class="profile-img" src="" alt="..." />
                     </div>
                 </div>
             </div>
@@ -33,6 +33,7 @@
             document.getElementById('keyLine').innerHTML = response.data['keyLine'];
             document.getElementById('title').innerHTML = response.data['title'];
             document.getElementById('short_title').innerHTML = response.data['short_title'];
+            document.getElementById('img_profile').innerHTML = response.data['img'];
 
         }catch(e){
             aler(e);
