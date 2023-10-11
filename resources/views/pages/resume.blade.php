@@ -4,4 +4,4 @@
     @include('components.education')
     @include('components.professional-skills')
     @include('components.languages')
-@endsection
+@endsection  
