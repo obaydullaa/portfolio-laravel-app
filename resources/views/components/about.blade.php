@@ -18,12 +18,12 @@
     </div>
 </section>
 
-<script>
+<script>  
      
      // start here
 
 
      
 
-     
+
 </script>
