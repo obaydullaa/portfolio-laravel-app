@@ -28,7 +28,6 @@
             document.getElementById('loading-div').classList.add('d-none');
             document.getElementById('content-div').classList.remove('d-none');
             
-
             response.data.forEach(item => {
                 document.getElementById('language-list').innerHTML+=(
                     `<div class="col p-3 mb-4 mb-md-0">
