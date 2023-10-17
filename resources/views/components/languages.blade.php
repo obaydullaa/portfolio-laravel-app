@@ -19,7 +19,6 @@
 <script>
     LanguageList()
     async function LanguageList() {
-
         try {
             let URL = "/languageData";
 
