@@ -39,7 +39,6 @@
                     </div>`)
             });
 
-
         }catch (error) {
             alert('error');
         }
