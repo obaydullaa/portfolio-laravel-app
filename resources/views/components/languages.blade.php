@@ -21,7 +21,6 @@
     async function LanguageList() {
         try {
             let URL = "/languageData";
-
             let response = await axios(URL); 
 
             // Loader hide content show   
@@ -41,5 +40,5 @@
             alert('error');
         }
     }
-    
+
 </script>
