@@ -15,7 +15,6 @@
     </div>
 </div>
 
-
 <script>
     LanguageList()
     async function LanguageList() {
