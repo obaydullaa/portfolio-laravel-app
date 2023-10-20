@@ -39,10 +39,7 @@
         } catch (error) {
             alertA(error);
         }
-        
     }
-
-
 
 
     getExpList();
