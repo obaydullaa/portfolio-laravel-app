@@ -22,7 +22,6 @@
 
             </section>
             <!-- Education Section-->
-
 <script>
 
     getResumeLinkg();
@@ -43,8 +42,6 @@
         }
         
     }
-
-
 
 
 
