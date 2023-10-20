@@ -14,7 +14,6 @@
                         Download Resume
                     </a>
                 </div>
-
                 <div class="" id="experince-list">
                     <!-- Experience Card 1-->
                     
