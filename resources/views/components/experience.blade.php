@@ -41,10 +41,11 @@
         }
     }
 
+    
+
     getExpList();
     async function getExpList() {
        try {
-        
         let URL = "/experiencesData";
         let response = await axios.get(URL);
 
