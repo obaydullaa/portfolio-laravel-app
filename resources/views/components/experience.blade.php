@@ -38,7 +38,9 @@
             alertA(error);
         }
     }
+    
     getExpList();
+
     async function getExpList() {
        try {
         let URL = "/experiencesData";
