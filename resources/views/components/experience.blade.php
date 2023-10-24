@@ -22,7 +22,6 @@
             </section>
             <!-- Education Section-->
 <script>
-
     getResumeLinkg();
    async function getResumeLinkg() {
         try {
