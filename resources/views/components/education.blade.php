@@ -11,11 +11,11 @@
 <!-- Divider-->
 <div class="pb-5"></div>
 
-
 <script>
     eduList()
 
     async function eduList() {
+
         try {
             let URL ="/educationData";
             let response = await axios.get(URL);
