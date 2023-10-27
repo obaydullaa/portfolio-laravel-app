@@ -12,7 +12,9 @@
                         <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
                     </div>
                 </div>
+
             </div>
+
             <div class="col-xxl-7">
                 <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                     <div class="profile">
@@ -20,6 +22,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </header>
