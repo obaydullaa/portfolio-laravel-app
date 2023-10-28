@@ -13,6 +13,8 @@
 <!-- Divider-->
 <div class="pb-5"></div>
 
+
+
 <script>
     eduList()
 
