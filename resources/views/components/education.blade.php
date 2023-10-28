@@ -1,7 +1,7 @@
 <!-- Education Section-->
 <section>
     <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-    
+
     
     <div id="education-list">
         <!-- Education Card 1-->
@@ -52,3 +52,6 @@
         }
     }
 </script>
+
+
+
