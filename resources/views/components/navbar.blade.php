@@ -17,9 +17,4 @@
     </nav>
     <!-- Header-->
 
-</main>
-
-
-
-
-
+</main
