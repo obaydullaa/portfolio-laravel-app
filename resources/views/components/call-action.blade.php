@@ -7,6 +7,3 @@
         </div>
     </div>
 </section>
-
-
-
