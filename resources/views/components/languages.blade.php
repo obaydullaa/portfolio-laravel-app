@@ -34,11 +34,27 @@
                         </div>
                     </div>`)
             });
+            
 
         }catch (error) {
             alert('error');
         }
+
     }
     
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
