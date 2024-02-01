@@ -16,7 +16,7 @@
 </div>
 
 <script>
-    LanguageList()
+    LanguageList()                    
     async function LanguageList() {
         try {
             let URL = "/languageData";
@@ -44,3 +44,8 @@
     
 
 </script>
+
+
+
+
+
